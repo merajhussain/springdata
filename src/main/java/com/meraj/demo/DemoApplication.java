@@ -9,7 +9,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.meraj.demo.config.DbSource;
+
 import com.meraj.demo.data.PersonJpaData;
 import com.meraj.demo.entiry.Person;
 
@@ -20,8 +20,7 @@ public class DemoApplication implements CommandLineRunner{
 	
 	@Autowired
 	PersonJpaData personrepo;
-	@Autowired
-	DbSource db;
+	
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
